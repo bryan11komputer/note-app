@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block title %}Welcome to Note App{% endblock %}
+
+{% block content %}
+<!-- JUMBOTRON -->
+
+<!-- END JUMBOTRON -->
+
+<!-- PANEL -->
+
+  <section class="my-jumbotron">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Create Notes with ease</h1>
+       <a href="{{ url_for('create') }}" class="btn btn-success my-button">Start Writing Your Own Notes</a>
+    </div>
+  </div>      
+</section>
+    <!-- END JUMBOTRON -->
+ 
+    <!-- PANEL -->
+    <section class="my-panel">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-10 my-info-panel">
+            <div class="row">
+              <div class="col-lg">
+                <h4>Store notes much more easily</h4>
+                <p><em>A better way to keep all your notes.</em></p>
+                <img src="{{ url_for('static', filename='img/keren.jpeg') }}" alt="cool" class="float-left">
+              </div>
+              <div class="col-lg">
+                <p><tab2></tab2></p>
+                <img src="{{ url_for('static', filename='img/simple.jpeg') }}" alt="simple" class="float-left">
+                <h4 style="margin-top:15px; font-family: 'Josefin Sans', sans-serif;">Faster tools to write notes </h4>
+                <p><em>much better than using papers.<em></p>
+              </div>
+          
+ 
+          </div>
+        </div>
+ 
+        <p><tab2></tab2></p>
+ 
+        <div class="row my-info-panel2">
+          <div class="col-lg-6">
+            <img src="{{ url_for('static', filename='img/comfort.jpeg') }}" alt="comfort" class="img-fluid">
+          </div>
+ 
+          <div class="col-lg-6">
+            <h3>Create an account now</h3>
+            <p>and enjoy all the features</p>
+            <li class="nav-item">
+               <a class="nav-link btn btn-primary my-button" href="{{ url_for('register') }}"><span>Register Now!</span> </a>
+            </li>          
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- END PANEL -->
+{% endblock %}
